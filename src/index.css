@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0c0f14;
+  font-family: "Poppins";
+}
+
+@keyframes blink-shadow {
+  0%,
+  100% {
+    box-shadow: 0px 0px 10px 5px rgba(18, 133, 255, 1);
+  }
+  50% {
+    box-shadow: 0px 0px 20px 10px rgba(27, 136, 253, 0.77);
+  }
+}
+.animate-blink-shadow {
+  animation: blink-shadow 2s infinite;
+}
+
+
+@keyframes footer-blink-shadow {
+  0%, 100% {
+    box-shadow: 0px -5px 10px rgba(18, 133, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0px -7px 12px rgba(27, 136, 253, 0.1);
+  }
+}
+.animate-footer-blink-shadow {
+  animation: footer-blink-shadow 2s infinite;
+}
+
+
+
+/* Mobile Menu Container */
+.mobile-menu {
+  position: fixed;
+  top: 99px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(19, 19, 25, 1), rgba(29, 33, 52, 1));
+  z-index: 10;
+  padding: 1.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Mobile Menu Sliding In */
+.slide-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Mobile Menu Sliding Out */
+.slide-out {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+
+@layer utilities {
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .ml-sm-xl-5 {
+      margin-left: 1.5rem; /* Tailwind's `ml-5` value */
+    }
+  }
+}
+@layer utilities {
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .hide-sm-lg {
+      display: none; /* Tailwind's `ml-5` value */
+    }
+  }
+}
