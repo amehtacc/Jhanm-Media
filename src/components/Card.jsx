@@ -1,6 +1,6 @@
 import React from 'react'
 import SmallCard from './SmallCard'
-import { diamond, flash, unlimited, paid, staisfation } from "../assets/images";
+import { diamond, flash, unlimited, paid, satisfaction } from "../assets/images";
 
 function Card() {
     const cardDetail = [
@@ -25,8 +25,8 @@ function Card() {
             description:'Enjoy exceptional quality with every project—attention to detail and results that go beyond your expectations every time!'
         },
         {
-            image:staisfation,
-            title:'Staisfation guaranteed',
+            image:satisfaction,
+            title:'Satisfaction guaranteed',
             description:`Your satisfaction is guaranteed—if you're not completely happy, we'll make it right and ensure your needs are met!`
         }
     ]

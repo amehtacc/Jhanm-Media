@@ -6,7 +6,7 @@ import diamond from './diamond_24dp.png'
 import flash from './flash_on_24dp.png'
 import unlimited from './all_inclusive_24dp.png'
 import paid from './paid_24dp.png'
-import staisfation from './sentiment_satisfied_24dp.png'
+import satisfaction from './sentiment_satisfied_24dp.png'
 import send from './send_24dp.png'
 import aryan from './Aryan.png'
 import paypal from './paypal.png'
@@ -34,4 +34,4 @@ import Video_7_cover from './Video_7_cover.jpg'
 import Video_8_cover from './Video_8_cover.jpg'
 import Video_9_cover from './Video_9_cover.jpg'
 
-export { Logo, Favicon, hamburger, hamburger_open, mail, play, Video_1, Video_2, Video_3, Video_4, Video_5, Video_6, Video_7, Video_8, Video_9, Video_1_cover, Video_2_cover, Video_3_cover, Video_4_cover, Video_5_cover, Video_6_cover, Video_7_cover, Video_8_cover, Video_9_cover, diamond, flash, unlimited, paid, staisfation, send, aryan, paypal, upi,  }
+export { Logo, Favicon, hamburger, hamburger_open, mail, play, Video_1, Video_2, Video_3, Video_4, Video_5, Video_6, Video_7, Video_8, Video_9, Video_1_cover, Video_2_cover, Video_3_cover, Video_4_cover, Video_5_cover, Video_6_cover, Video_7_cover, Video_8_cover, Video_9_cover, diamond, flash, unlimited, paid, satisfaction, send, aryan, paypal, upi,  }
